@@ -39,7 +39,6 @@ public class SpringBootAdminRegistrator {
 		Assert.notNull(env.getProperty("server.port"), "The server port of the application is mandatory");
 		Assert.notNull(env.getProperty("info.id"), "The id of the application is mandatory");
 		Assert.notNull(env.getProperty("info.version"), "The version of the application is mandatory");
-		Assert.notNull(env.getProperty("boot.admin.url"), "The URL of the spring-boot-admin application is mandatory");
 	}
 
 	/**
