@@ -2,6 +2,9 @@ package de.codecentric.boot.admin.model;
 
 import java.io.Serializable;
 
+/**
+ * The domain model for all registered application at the spring boot admin application.
+ */
 public class Application implements Serializable {
 
 	private static final long serialVersionUID = 1L;
