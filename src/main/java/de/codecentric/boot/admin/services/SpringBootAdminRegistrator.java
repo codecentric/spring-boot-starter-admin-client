@@ -11,6 +11,7 @@ import javax.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -28,6 +29,10 @@ public class SpringBootAdminRegistrator {
 
 	@Autowired
 	private Environment env;
+
+	// the URL of the admin application - default: localhost:8080
+	@Value("${boot.admin.url:http://localhost:8080}")
+	private String adminUrl;
 
 	@PostConstruct
 	public void check() {
@@ -47,7 +52,6 @@ public class SpringBootAdminRegistrator {
 	public void minutly() throws UnknownHostException, MalformedURLException {
 		String id = env.getProperty("info.id");
 		int port = env.getProperty("server.port", Integer.class);
-		String adminUrl = env.getProperty("boot.admin.url");
 		RestTemplate template = new RestTemplate();
 		template.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
 		ApplicationList list = template.getForObject(adminUrl + "/api/applications", ApplicationList.class);
