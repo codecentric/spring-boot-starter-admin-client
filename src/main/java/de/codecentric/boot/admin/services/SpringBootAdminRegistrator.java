@@ -66,7 +66,7 @@ public class SpringBootAdminRegistrator {
 		app.setId(id);
 		app.setUrl(url);
 		template.postForObject(adminUrl + "/api/applications", app, void.class);
-		LOGGER.info("Application registered itself at the admin application with ID {} and URL {}", id, url);
+		LOGGER.info("Application registered itself at the admin application with ID '{}' and URL '{}'", id, url);
 	}
 
 	private static class ApplicationList extends ArrayList<Application> {
