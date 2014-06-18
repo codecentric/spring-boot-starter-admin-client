@@ -57,6 +57,7 @@ public class SpringBootAdminRegistrator {
 		for (Application app : list) {
 			if (id.equals(app.getId())) {
 				// the application is already registered at the admin tool
+				LOGGER.debug("Application already registered with ID '{}'", id);
 				return;
 			}
 		}
