@@ -15,7 +15,7 @@ public class RefreshController {
 	@Autowired
 	private ConfigurableApplicationContext context;
 
-	@RequestMapping(value = "/admin/refresh", method = RequestMethod.POST)
+	@RequestMapping(value = "/refresh", method = RequestMethod.POST)
 	public void refresh() {
 		context.refresh();
 	}
