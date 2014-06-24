@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
+import de.codecentric.boot.admin.controller.RefreshController;
 import de.codecentric.boot.admin.services.SpringBootAdminRegistrator;
 import de.codecentric.boot.admin.web.SimpleCORSFilter;
 
@@ -23,6 +24,11 @@ public class SpringBootAdminClientAutoConfiguration {
 	@Bean
 	public SimpleCORSFilter corsFilter() {
 		return new SimpleCORSFilter();
+	}
+
+	@Bean
+	public RefreshController refreshController() {
+		return new RefreshController();
 	}
 
 }

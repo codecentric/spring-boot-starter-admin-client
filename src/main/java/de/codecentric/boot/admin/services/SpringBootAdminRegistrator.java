@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 import org.springframework.web.client.RestTemplate;
 
@@ -23,6 +24,7 @@ import de.codecentric.boot.admin.model.Application;
 /**
  * Scheduler that checks the registration of the application at the spring-boot-admin.
  */
+@Service
 public class SpringBootAdminRegistrator {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(SpringBootAdminRegistrator.class);
