@@ -64,7 +64,7 @@ public class SpringBootAdminRegistrator {
 			}
 		}
 		// register the application with the used URL and port
-		String url = new URL("http", InetAddress.getLocalHost().getHostName(), port, "").toString();
+		String url = new URL("http", InetAddress.getLocalHost().getCanonicalHostName(), port, "").toString();
 		Application app = new Application();
 		app.setId(id);
 		app.setUrl(url);
