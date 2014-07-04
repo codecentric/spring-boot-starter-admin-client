@@ -41,6 +41,7 @@ public class LogfileController {
 			return "Logfile download failed for missing file at path=" + path;
 		}
 		response.setContentType("application/octet-stream");
+		response.setHeader("Content-Disposition", "attachment; filename=\"" + file.getFilename() + "\"");
 		try {
 			FileCopyUtils.copy(file.getInputStream(), response.getOutputStream());
 		} catch (IOException e) {
