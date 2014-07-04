@@ -11,7 +11,7 @@ The following properties have to be included in the environment (i.e. applicatio
 
 <table>
 <tr>
-<td width="200">info.id</td><td>The identifier in the registry - this property is published by the info-Endpoint</td>
+<td>info.id</td><td>The identifier in the registry - this property is published by the info-Endpoint</td>
 </tr>
 <tr>
 <td>info.version</td><td>The verion number - also published by the info-Endpoint</td>
