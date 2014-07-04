@@ -1,5 +1,6 @@
 package de.codecentric.boot.admin.config;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.config.ScheduledTaskRegistrar;
@@ -46,6 +47,7 @@ public class SpringBootAdminClientAutoConfiguration {
 	 * Controller to do something with the application logfile(s).
 	 */
 	@Bean
+	@ConditionalOnProperty("logging.file")
 	public LogfileController logfileController() {
 		return new LogfileController();
 	}
