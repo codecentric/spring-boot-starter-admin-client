@@ -7,6 +7,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Refresh the application context i.e. to reload changed properties files.
@@ -20,9 +21,11 @@ public class RefreshController {
 	private ConfigurableApplicationContext context;
 
 	@RequestMapping(value = "/refresh", method = RequestMethod.POST)
-	public void refresh() {
+	@ResponseBody
+	public String refresh() {
 		// Doesn't work in spring-boot at the moment ... (v 1.1.0)
 		LOGGER.warn("Refreshing application doesn't work at the moment");
+		return "Refreshing application doesn't work at the moment";
 		// context.refresh();
 	}
 

@@ -58,7 +58,7 @@ public class SpringBootAdminRegistratorTask implements Runnable {
 			Application app = new Application();
 			app.setId(id);
 			app.setUrl(url);
-			template.postForObject(adminUrl + "/api/applications", app, void.class);
+			template.postForObject(adminUrl + "/api/applications", app, String.class);
 			LOGGER.info("Application registered itself at the admin application with ID '{}' and URL '{}'", id, url);
 		} catch (Exception e) {
 			LOGGER.warn("Failed to register application at spring-boot-admin, message={}", e.getMessage());
