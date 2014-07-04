@@ -1,7 +1,7 @@
 #!/bin/bash
 # Muss im root-Verzeichnis des Projekts ausgeführt werden
 
-LIB=spring-boot-starter-admin-client-1.0.0.RC2
+LIB=spring-boot-starter-admin-client-1.0.0.RC3
 REPO=/home/thomas/Entwicklung/git/maven-repo/
 
 # Main Sources
