@@ -1,5 +1,7 @@
 package de.codecentric.boot.admin.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Controller;
@@ -12,12 +14,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class RefreshController {
 
+	private static final Logger LOGGER = LoggerFactory.getLogger(RefreshController.class);
+
 	@Autowired
 	private ConfigurableApplicationContext context;
 
 	@RequestMapping(value = "/refresh", method = RequestMethod.POST)
 	public void refresh() {
-		context.refresh();
+		// Doesn't work in spring-boot at the moment ... (v 1.1.0)
+		LOGGER.warn("Refreshing application doesn't work at the moment");
+		// context.refresh();
 	}
 
 }
