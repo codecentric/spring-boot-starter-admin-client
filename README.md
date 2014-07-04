@@ -9,7 +9,7 @@ The main service that is used is a registrar that registeres the application at 
 
 The following properties have to be included in the environment (i.e. application.properties) to ensure all features to work properly.
 
-<table border="1" cellspacing="0" cellpadding="3">
+<table>
 <tr>
 <td width="200">info.id</td><td>The identifier in the registry - this property is published by the info-Endpoint</td>
 </tr>
