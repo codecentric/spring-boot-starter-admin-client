@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.codecentric</groupId>
 	<artifactId>spring-boot-starter-admin-client</artifactId>
-	<version>1.0.0.RC5</version>
+	<version>1.0.0.RELEASE</version>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starters</artifactId>
