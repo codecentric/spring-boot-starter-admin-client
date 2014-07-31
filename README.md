@@ -1,7 +1,7 @@
 spring-boot-starter-admin-client
 ================================
 
-This [Spring-Boot starter](http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#using-boot-starter-poms "Spring Boot docu") that provides services and controllers that a required if an application show be able to be administrated with the [spring-boot-admin application](https://github.com/dickerpulli/spring-boot-admin "GitHub project").
+This [Spring-Boot starter](http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#using-boot-starter-poms "Spring Boot docu") that provides services and controllers that a required if an application show be able to be administrated with the [spring-boot-admin application](https://github.com/codecentric/spring-boot-admin "GitHub project").
 
 This client uses the [AutoConfiguration](http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#using-boot-auto-configuration "Spring Boot docu") feature of Spring Boot to register service and controller beans in the application context.
 
