@@ -11,10 +11,10 @@ The following properties have to be included in the environment (i.e. applicatio
 
 <table>
 <tr>
-<td>info.id</td><td>The identifier in the registry - this property is published by the info-Endpoint</td>
+<td>info.id</td><td>The identifier in the registry - this property is published by the /info endpoint</td>
 </tr>
 <tr>
-<td>info.version</td><td>The verion number - also published by the info-Endpoint</td>
+<td>info.version</td><td>The version number - also published by the /info endpoint</td>
 </tr>
 <tr>
 <td>spring.boot.admin.url</td><td>URL of the spring-boot-admin application to register at</td>
