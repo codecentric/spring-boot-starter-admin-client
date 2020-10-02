@@ -5,9 +5,9 @@ This [Spring-Boot starter](http://docs.spring.io/spring-boot/docs/current-SNAPSH
 
 This client uses the [AutoConfiguration](http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#using-boot-auto-configuration "Spring Boot docu") feature of Spring Boot to register service and controller beans in the application context.
 
-The main service that is used is a registrar that registeres the application at the spring-boot-admin application by periodically calling a REST-API to check or perform the registration of itself.
+The main service that is used is a registrar that registers the application at the spring-boot-admin application periodically calling a REST-API to check or perform the registration of itself.
 
-The following properties have to be included in the environment (i.e. application.properties) to ensure all features to work properly.
+The following properties have to be included in the environment (i.e. application.properties) to ensure all features are working properly.
 
 <table>
 <tr>
